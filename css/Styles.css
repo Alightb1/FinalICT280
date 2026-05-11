@@ -130,3 +130,30 @@ body {
     flex-shrink: 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+
+
+contact-header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-header h1 {
+    color: var(--green-main, #2F5D3A);
+    font-size: 32px;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--earth-light, #E8DCC2);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-content p {
+    margin: 10px 0;
+}
