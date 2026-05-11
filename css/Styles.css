@@ -113,3 +113,20 @@ body {
     color: var(--green-main, #2F5D3A);
 }
 
+.image-strip {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 15px;
+    background-color: var(--earth-light, #E8DCC2);
+    border-top: 3px solid var(--green-main, #2F5D3A);
+    border-bottom: 3px solid var(--green-main, #2F5D3A);
+}
+
+.image-strip img {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
