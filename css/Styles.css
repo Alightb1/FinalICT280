@@ -41,7 +41,7 @@ body {
     line-height: 1.6;
     text-align: center;
 }
-
+/* CSS for back home button */
 .back-home {
     position: fixed;
     bottom: 20px;
@@ -60,7 +60,7 @@ body {
 .back-home:hover {
     background-color: var(--green-main, #2F5D3A);
 }
-
+/* product css */
 .top-bar {
     width: 100%;
     padding: 15px;
@@ -112,7 +112,14 @@ body {
 .product-info h1 {
     color: var(--green-main, #2F5D3A);
 }
+.product-info h2 {
+    text-align: left;
+    color: var(--green-main, #2F5D3A);
 
+}
+.product-info{
+    text-align: left;
+}
 .image-strip {
     display: flex;
     overflow-x: auto;
@@ -124,7 +131,7 @@ body {
 }
 
 .image-strip img {
-    width: 350px;
+    width: 365px;
     height: 250px;
     border-radius: 10px;
     flex-shrink: 0;
@@ -132,7 +139,7 @@ body {
 }
 
 
-
+/* contact css*/
 contact-header {
     text-align: center;
     margin-top: 40px;
@@ -156,4 +163,44 @@ contact-header {
 
 .contact-content p {
     margin: 10px 0;
+}
+
+/* blog css  */
+
+.blog-header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.blog-header h1 {
+    color: var(--green-main, #2F5D3A);
+    font-size: 32px;
+}
+
+.blog-list {
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-link {
+    background: var(--earth-light, #E8DCC2);
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--green-main, #2F5D3A);
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.blog-link:hover {
+    background: var(--green-soft, #8BAF8D);
+    color: white;
+}
+
+.highlight {
+    background-color: yellow;
 }
