@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="../css/Styles.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
 </head>
 
@@ -18,7 +19,7 @@
         <p><strong>Address:</strong> 103 Main St, Las Cruces NM</p>
 
 
-    <form class="contact-form">
+    <form id="contactForm" class="contact-form">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required>
 
@@ -34,6 +35,14 @@
 
 
 <a href="../index.html" class="back-home">← Back to Home</a>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stops the page from reloading
+    alert("Thank you for submitting!");
+    this.reset(); // clears the form
+});
+</script>
+
 </body>
 
 </html>

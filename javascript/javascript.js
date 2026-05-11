@@ -1,14 +1,15 @@
 
+
 document.getElementById("searchBtn").addEventListener("click", function () {
     let term = document.getElementById("searchBar").value.trim().toLowerCase();
     if (!term) return;
 
-    // Remove old highlights
+   
     document.querySelectorAll(".highlight").forEach(el => {
         el.classList.remove("highlight");
     });
 
-    // Search the page
+  
     let bodyText = document.body.innerHTML.toLowerCase();
     let index = bodyText.indexOf(term);
 
@@ -17,7 +18,7 @@ document.getElementById("searchBtn").addEventListener("click", function () {
         return;
     }
 
-    // Highlight the match
+    
     let range = document.createRange();
     let selection = window.getSelection();
     selection.removeAllRanges();
@@ -41,7 +42,9 @@ document.getElementById("searchBtn").addEventListener("click", function () {
 
     findText(document.body);
 
-    // Add highlight class
     
 });
+
+
+
 
